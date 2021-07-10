@@ -1,4 +1,5 @@
-﻿using Deepin.Collections.InterfacesImplementation.IEnumerableExample.Concrete;
+﻿using Deepin.Collections.InterfacesImplementation.IEnumerableExample;
+using Deepin.Collections.InterfacesImplementation.IEnumerableExample.Concrete;
 using System;
 using System.Threading;
 
@@ -20,7 +21,7 @@ namespace Deepin.Collections
                 new Animal("Zebra", 7)
             };
 
-            var zoo = new Zoo<Animal>(animals);
+            var zoo = new CustomEnumerable<Animal>(animals);
 
             foreach (Animal animal in zoo)
             {
