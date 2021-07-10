@@ -11,9 +11,26 @@ namespace Deepin.Collections.InterfacesImplementation.IEnumerableExample
     {
         private T[] elements;
 
+        public CustomEnumerable()
+        {
+            elements = new T[1];
+        }
+
         public CustomEnumerable(T[] elements)
         {
             this.elements = elements;
+        }
+
+        public void Add(T element)
+        {
+            if (elements[0] is null)
+            {
+                elements[0] = element;
+            }
+            else
+            {
+                elements = elements.Concat(new T[] { element }).ToArray();
+            }
         }
 
         public IEnumerator GetEnumerator()

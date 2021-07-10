@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace Deepin.Collections.InterfacesImplementation.IEnumerableExample.Concrete
 {
-    class Animal : Element
+    class Car : Element
     {
-        public int Age { get; set; }
+        public int MaxSpeed { get; set; }
 
-        public Animal(string name, int age)
+        public Car(string name, int maxSpeed)
         {
             Name = name;
-            Age = age;
+            MaxSpeed = maxSpeed;
         }
 
         public override void ShowInfo()
         {
-            Console.WriteLine($"Animal: {Name}; Age: {Age}");
+            Console.WriteLine($"Car: {Name}; Max Speed: {MaxSpeed}");
         }
     }
 }

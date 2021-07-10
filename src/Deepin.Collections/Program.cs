@@ -10,6 +10,8 @@ namespace Deepin.Collections
         static void Main(string[] args)
         {
             CreateZoo();
+            InsertDelimeter();
+            CreateGarage();
         }
 
         private static void CreateZoo()
@@ -27,6 +29,25 @@ namespace Deepin.Collections
             {
                 animal.ShowInfo();
             }
+        }
+
+        private static void CreateGarage()
+        {
+            var garage = new CustomEnumerable<Car>
+            {
+                new Car("Audi", 240),
+                new Car("BMW", 280)
+            };
+
+            foreach (Car car in garage)
+            {
+                car.ShowInfo();
+            }
+        }
+
+        private static void InsertDelimeter()
+        {
+            Console.WriteLine("==========");
         }
     }
 }
