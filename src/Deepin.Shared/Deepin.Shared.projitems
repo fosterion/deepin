@@ -10,6 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Models\Animal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Book.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Car.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Element.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Product.cs" />

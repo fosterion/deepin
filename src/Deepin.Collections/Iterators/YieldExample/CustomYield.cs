@@ -23,5 +23,20 @@ namespace Deepin.Collections.Iterators.YieldExample
                 yield return elements[i];
             }
         }
+
+        public IEnumerable GetElements(int max)
+        {
+            for (int i = 0; i < max; i++)
+            {
+                if (i == elements.Length)
+                {
+                    yield break;
+                }
+                else
+                {
+                    yield return elements[i];
+                }
+            }
+        }
     }
 }
