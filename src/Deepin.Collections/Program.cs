@@ -1,5 +1,6 @@
-﻿using Deepin.Collections.InterfacesImplementation.IEnumerableExample;
-using Deepin.Collections.InterfacesImplementation.IEnumerableExample.Concrete;
+﻿using Deepin.Collections.Interfaces.IEnumerableExample;
+using Deepin.Collections.Iterators.YieldExample;
+using Deepin.Shared.Models;
 using System;
 using System.Threading;
 
@@ -12,6 +13,8 @@ namespace Deepin.Collections
             CreateZoo();
             InsertDelimeter();
             CreateGarage();
+            InsertDelimeter();
+            CreateFridge();
         }
 
         private static void CreateZoo()
@@ -42,6 +45,23 @@ namespace Deepin.Collections
             foreach (Car car in garage)
             {
                 car.ShowInfo();
+            }
+        }
+
+        private static void CreateFridge()
+        {
+            var products = new Product[3]
+            {
+                new Product("Beer", 120),
+                new Product("Parrot", 25),
+                new Product("Ketchup", 80)
+            };
+
+            var fridge = new CustomYield<Product>(products);
+
+            foreach (Product product in fridge)
+            {
+                product.ShowInfo();
             }
         }
 

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Deepin.Collections.InterfacesImplementation.IEnumerableExample
+namespace Deepin.Collections.Interfaces.IEnumerableExample
 {
     class CustomEnumerator<T> : IEnumerator
     {

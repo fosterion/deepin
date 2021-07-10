@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Deepin.Collections.InterfacesImplementation.IEnumerableExample.Concrete
+namespace Deepin.Shared.Models
 {
     class Animal : Element
     {
