@@ -12,9 +12,12 @@ namespace Deepin.Collections
         {
             CreateZoo();
             InsertDelimeter();
+
             CreateGarage();
             InsertDelimeter();
+
             CreateFridge();
+            InsertDelimeter();
         }
 
         private static void CreateZoo()
@@ -67,7 +70,7 @@ namespace Deepin.Collections
 
         private static void InsertDelimeter()
         {
-            Console.WriteLine("==========");
+            Console.WriteLine("==========\n");
         }
     }
 }
