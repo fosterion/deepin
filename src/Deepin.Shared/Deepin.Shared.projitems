@@ -9,13 +9,23 @@
     <Import_RootNamespace>Deepin.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Models\Animal.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\Book.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\Car.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\Element.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\Product.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IPlanet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Devices\Device.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Devices\Keyboard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Devices\Mouse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Devices\WiredMouse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Devices\WirelessMouse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Elements\Animal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Elements\Book.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Elements\Car.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Elements\Element.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Elements\Product.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Planets\Earth.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Planets\Mars.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Planets\Mercury.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Planets\Venus.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Interfaces\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Models\Elements\" />
   </ItemGroup>
 </Project>

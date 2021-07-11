@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Deepin.Shared.Models
+namespace Deepin.Shared.Models.Elements
 {
     class Book : Element
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Deepin
+namespace Deepin.Variances
 {
     class Program
     {

@@ -1,7 +1,12 @@
 ﻿using Deepin.Collections.Interfaces.IEnumerableExample;
 using Deepin.Collections.Iterators.YieldExample;
+using Deepin.Shared.Interfaces;
 using Deepin.Shared.Models;
+using Deepin.Shared.Models.Devices;
+using Deepin.Shared.Models.Elements;
+using Deepin.Shared.Models.Planets;
 using System;
+using System.Collections.Generic;
 using System.Threading;
 
 namespace Deepin.Collections

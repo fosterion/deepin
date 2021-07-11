@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Deepin.Shared.Models
+namespace Deepin.Shared.Models.Elements
 {
     class Animal : Element
     {
