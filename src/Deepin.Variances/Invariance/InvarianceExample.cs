@@ -9,9 +9,14 @@ namespace Deepin.Variances.Invariance
 {
     class InvarianceExample
     {
+        /// <summary>
+        /// Ситуация, когда наследование исходных типов не переносится на производные.
+        /// Это означает, что можно использовать только изначально указанный тип.
+        /// Таким образом, параметр инвариантного универсального типа не является ни ковариантным, ни контрвариантным.
+        /// </summary>
         public void ValidInvariance()
         {
-            List<Keyboard> keyboards = new List<Keyboard>
+            var keyboards = new List<Keyboard>
             {
                 new Keyboard(),
                 new Keyboard(),

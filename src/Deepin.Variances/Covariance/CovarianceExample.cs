@@ -9,9 +9,13 @@ namespace Deepin.Variances.Covariance
 {
     class CovarianceExample
     {
+        /// <summary>
+        /// Перенос наследования исходных типов на производные от них типы в прямом порядке.
+        /// Позволяет использовать тип с большей глубиной наследования, чем задано изначально.
+        /// </summary>
         public void ValidCovariance()
         {
-            List<Keyboard> keyboards = new List<Keyboard>
+            var keyboards = new List<Keyboard>
             {
                 new Keyboard(),
                 new Keyboard(),
@@ -19,6 +23,11 @@ namespace Deepin.Variances.Covariance
             };
 
             IEnumerable<Device> devices = keyboards;
+
+            foreach (var device in devices)
+            {
+                device.PlugIn();
+            }
         }
     }
 }
