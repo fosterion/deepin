@@ -1,7 +1,7 @@
-﻿using Deepin.Variances.Contravariance;
+﻿using Deepin.Shared.Helpers;
+using Deepin.Variances.Contravariance;
 using Deepin.Variances.Covariance;
 using Deepin.Variances.Invariance;
-using System;
 
 namespace Deepin.Variances
 {
@@ -10,18 +10,13 @@ namespace Deepin.Variances
         static void Main(string[] args)
         {
             new CovarianceExample().ValidCovariance();
-            InsertDelimeter();
+            Methods.InsertDelimeter();
 
             new ContravarianceExample().ValidContravariance();
-            InsertDelimeter();
+            Methods.InsertDelimeter();
 
             new InvarianceExample().ValidInvariance();
-            InsertDelimeter();
-        }
-
-        private static void InsertDelimeter()
-        {
-            Console.WriteLine("==========\n");
+            Methods.InsertDelimeter();
         }
     }
 }

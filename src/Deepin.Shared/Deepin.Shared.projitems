@@ -9,6 +9,7 @@
     <Import_RootNamespace>Deepin.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Methods.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IPlanet.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Devices\Device.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Devices\Keyboard.cs" />
