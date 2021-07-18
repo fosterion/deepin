@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DeepinAlgorithms
+namespace Deepin.BinarySearch
 {
     class Program
     {
